@@ -1,0 +1,29 @@
+{
+  "name": "My Dev Container",
+  "dockerFile": "Dockerfile",
+  // Uncomment the next line if you are using a Docker Compose setup
+  // "dockerComposeFile": "docker-compose.yml",
+
+  // Set *default* container specific settings.json values on container create.
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+
+  // Add the IDs of extensions you want installed when the container is created.
+  "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [3000],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "npm install"
+
+  // Comment out the next line if you want to use a non-root user.
+  // "remoteUser": "your-non-root-username",
+
+  // Uncomment if you want to pass environment variables to the container.
+  // "remoteEnv": {
+  //     "MY_VARIABLE": "value",
+  //     "ANOTHER_VARIABLE": "another value"
+  // }
+}
